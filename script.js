@@ -19,10 +19,10 @@ const navbar = document.getElementById('navbar');
 function handleScroll() {
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
-        document.getElementById('brandLogo').src = 'assets/FAWZ_Icon_Gold.png';
+        document.getElementById('brandLogo').src = 'assets/fawz-icon-gold.png';
     } else {
         navbar.classList.remove('scrolled');
-        document.getElementById('brandLogo').src = 'assets/FAWZ_Icon_White.png';
+        document.getElementById('brandLogo').src = 'assets/fawz-icon-white.png';
     }
 }
 
