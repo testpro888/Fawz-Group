@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAWZ GROUP</title>
+    <link rel="icon" type="image/png" href="assets/FAWZ_Favicon_512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-panel">
+            <div class="loader-logo">
+                <img src="Assets/fawz.png" alt="Fawz Group">
+            </div>
+        </div>
+    </div>
+    <header class="navbar" id="navbar">
+        <!-- Top bar -->
+        <div class="navbar-top">
+            <div class="navbar-top-container">
+                <div class="navbar-brand">
+                    <a href="#">
+                        <img src="assets/FAWZ_Icon_White.png" alt="Fawz Logo" class="brand-logo" id="brandLogo">
+                        <span class="brand-bold">FAWZ</span> <span class="brand-light">GROUP</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom bar (menu) -->
+        <div class="navbar-bottom">
+            <div class="navbar-bottom-container">
+                <nav class="navbar-menu">
+                    <ul>
+                        <li><a href="#advisory">Advisory</a></li>
+                        <li><a href="#multi-family-office">Multi-Family Office</a></li>
+                        <li><a href="#ecosystem">Ecosystem</a></li>
+                        <li><a href="#contact" class="nav-link-contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero section with background slideshow -->
+    <section class="hero" id="hero">
+        <!-- Background slides -->
+        <div class="hero-backgrounds">
+            <div class="hero-bg-slide active">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/advisory.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-bg-slide">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/family office.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-bg-slide">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/culture.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-bg-slide">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/office.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- Dark overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Content -->
+        <div class="hero-content">
+            <div class="hero-heading-slider">
+                <h1 class="hero-slide active">Certain Needs <em>Outgrow</em><br>What a Bank <em>Can Offer</em>, and</h1>
+                <h1 class="hero-slide"><em>Outlive</em> What The Public<br><em>Should See.</em></h1>
+            </div>
+        </div>
+
+        <!-- Bottom content -->
+        <div class="hero-bottom">
+            <p class="hero-description">
+                The families and institutions we work with have outgrown generic research and off-the-shelf solutions. What they need is a partner who understands their situation, engages personally, and keeps every conversation in confidence.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-outline">Contact Us &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Right bottom: Learn More + Slide arrows -->
+        <div class="hero-bottom-right">
+            <a href="#advisory" class="btn btn-text">Learn More</a>
+            <div class="hero-arrows">
+                <button class="arrow-btn" id="prevSlide">&lsaquo;</button>
+                <button class="arrow-btn" id="nextSlide">&rsaquo;</button>
+            </div>
+        </div>
+
+        <!-- Slide indicators -->
+        <div class="hero-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+            <button class="indicator" data-slide="3"></button>
+        </div>
+    </section>
+
+    <!-- Container 2: Entities Section -->
+    <section class="entities-section" id="advisory">
+        <!-- Banner -->
+        <div class="entities-banner" data-animate="zoom-in">
+            <img src="assets/business.jpg" alt="">
+            <div class="entities-banner-overlay"></div>
+            <div class="entities-banner-content">
+                <h2 class="entities-headline" data-animate="fade-left" data-delay="0.2"><em>Advisory and Capital Vehicle,</em><br>Each Run with Its Own Discipline</h2>
+                <p class="entities-subheadline" data-animate="fade-left" data-delay="0.4">Each entity holds its own mandate and client base, kept separate to avoid conflicts of interest and to preserve confidentiality.</p>
+            </div>
+        </div>
+
+        <!-- Two columns -->
+        <div class="entities-container">
+            <div class="entities-grid">
+                <!-- Entity 1 -->
+                <div class="entity-card" data-animate="fade-up">
+                    <span class="entity-tagline">Advisory</span>
+                    <h3 class="entity-name">PT Fawz Finansial Indonesia</h3>
+                    <p class="entity-description">An investment partner to corporates, institutions, and high-net-worth individuals who need more than a standard template every mandate is built around the client's situation.</p>
+                    <a href="#" class="entity-btn">Explore &rarr;</a>
+                </div>
+
+                <!-- Vertical divider -->
+                <div class="entities-divider"></div>
+
+                <!-- Entity 2 -->
+                <div class="entity-card delay-2" data-animate="fade-up" data-delay="0.2">
+                    <span class="entity-tagline">Multi-Family Office · Private Fund · Capital Vehicle</span>
+                    <h3 class="entity-name">Fawz Kapital Indonesia</h3>
+                    <p class="entity-description">Wealth structured and put to work across generations, built to endure.</p>
+                    <a href="#" class="entity-btn">Explore &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Container 3: Advisory Services -->
+    <section class="advisory-services" id="advisory-services">
+        <div class="advisory-services-inner">
+            <div class="advisory-services-header" data-animate="fade-up">
+                <h2 class="advisory-services-headline">Advisory built around you, not off the shelf</h2>
+                <p class="advisory-services-subheadline">Mandate details, fee structures, and engagement terms are discussed privately, based on each client's profile.</p>
+            </div>
+            <div class="advisory-services-grid">
+                <!-- Row 1 -->
+                <div class="advisory-service-card" data-animate="fade-up" data-delay="0.1">
+                    <h3 class="advisory-service-title">Private Equity Advisory</h3>
+                    <p class="advisory-service-desc">Transaction support for growth-stage companies and strategic stakeholders.</p>
+                </div>
+                <div class="advisory-service-card" data-animate="fade-up" data-delay="0.2">
+                    <h3 class="advisory-service-title">Family Office Management</h3>
+                    <p class="advisory-service-desc">Wealth management across asset classes for families with diversified portfolios.</p>
+                </div>
+                <div class="advisory-service-card" data-animate="fade-up" data-delay="0.3">
+                    <h3 class="advisory-service-title">Capital Financing & Raising</h3>
+                    <p class="advisory-service-desc">Connecting businesses with funding sources suited to their stage and needs.</p>
+                </div>
+                <!-- Row 2 -->
+                <div class="advisory-service-card" data-animate="fade-up" data-delay="0.4">
+                    <h3 class="advisory-service-title">IPO Advisory</h3>
+                    <p class="advisory-service-desc">Support through the public offering process, in partnership with trusted securities firms.</p>
+                </div>
+                <div class="advisory-service-card" data-animate="fade-up" data-delay="0.5">
+                    <h3 class="advisory-service-title">Hedge Fund</h3>
+                    <p class="advisory-service-desc">Hedging strategies and tactical allocation to protect portfolios from market volatility.</p>
+                </div>
+                <div class="advisory-service-card" data-animate="fade-up" data-delay="0.6">
+                    <h3 class="advisory-service-title">Portfolio Modelling Strategy Advisory</h3>
+                    <p class="advisory-service-desc">Portfolio models built around each client's risk profile and long-term objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Container 4: Multi-Family Office -->
+    <section class="kapital-section" id="multi-family-office">
+        <div class="kapital-inner">
+            <div class="kapital-header" data-animate="fade-up">
+                <h2 class="kapital-headline">Multi-Family Office, Private Fund, Capital Vehicle</h2>
+                <p class="kapital-subheadline">Wealth structured and put to work across generations, built to endure.</p>
+            </div>
+            <div class="kapital-grid">
+                <!-- Card 1: Private Equity -->
+                <div class="kapital-card" data-animate="fade-up" data-delay="0.1">
+                    <div class="kapital-card-image">
+                        <img src="assets/private equity.png" alt="Private Equity">
+                    </div>
+                    <div class="kapital-card-content">
+                        <h3 class="kapital-card-title">Private Equity</h3>
+                        <p class="kapital-card-desc">Participation in growth-stage companies with medium-to-long-term potential.</p>
+                    </div>
+                </div>
+                <!-- Card 2: Private Debt -->
+                <div class="kapital-card" data-animate="fade-up" data-delay="0.25">
+                    <div class="kapital-card-image">
+                        <img src="assets/private debt.png" alt="Private Debt">
+                    </div>
+                    <div class="kapital-card-content">
+                        <h3 class="kapital-card-title">Private Debt</h3>
+                        <p class="kapital-card-desc">Structured financing for businesses with clear cash flow and collateral.</p>
+                    </div>
+                </div>
+                <!-- Card 3: Real Assets -->
+                <div class="kapital-card" data-animate="fade-up" data-delay="0.4">
+                    <div class="kapital-card-image">
+                        <img src="assets/real assets.png" alt="Real Assets">
+                    </div>
+                    <div class="kapital-card-content">
+                        <h3 class="kapital-card-title">Real Assets</h3>
+                        <p class="kapital-card-desc">Property and infrastructure exposure oriented toward capital preservation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kapital-notes" data-animate="fade-up" data-delay="0.5">
+                <p>Every engagement is private. Allocation structures, return schemes, and terms are worked out directly with the Fawz Kapital team, tailored to each principal's profile and objectives — never published publicly.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Container 5: Key Person -->
+    <section class="key-person-section" id="key-person">
+        <div class="key-person-inner">
+            <div class="key-person-content">
+                <!-- Person Image -->
+                <div class="key-person-image">
+                    <img src="assets/person.png" alt="Zuraina Johannes">
+                </div>
+                <!-- Info -->
+                <div class="key-person-info">
+                    <span class="key-person-label">Key Person</span>
+                    <h3 class="key-person-name">Zuraina Johannes</h3>
+                    <span class="key-person-role">Managing Director — Fawz Group</span>
+                    <p class="key-person-desc">Safeguarding the trust and reputation behind Fawz Group, leading advisory direction and capital allocation across all Fawz entities, with a background spanning institutional and investment banking, commercial banking, and business in Indonesia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Container 6: Network of Businesses -->
+    <section class="network-section" id="ecosystem">
+        <div class="network-inner">
+            <div class="network-header" data-animate="fade-up">
+                <h2 class="network-headline">A wider network of businesses</h2>
+                <p class="network-subheadline">For media, community, and distribution, visit the relevant unit directly.</p>
+            </div>
+            <div class="network-grid">
+                <!-- Ikutin -->
+                <a href="https://www.ikutin.id" target="_blank" rel="noopener noreferrer" class="network-card" data-animate="fade-up" data-delay="0.1">
+                    <div class="network-card-bg">
+                        <img src="Assets/ikutingambar.jpg" alt="Ikutin">
+                    </div>
+                    <div class="network-card-overlay"></div>
+                    <div class="network-card-content">
+                        <div class="network-card-logo">
+                            <img src="Assets/ikutin.png" alt="Ikutin">
+                        </div>
+                        <span class="network-card-visit">Visit →</span>
+                    </div>
+                </a>
+
+                <!-- Petik Profit -->
+                <a href="https://www.pp.ikutin.id" target="_blank" rel="noopener noreferrer" class="network-card" data-animate="fade-up" data-delay="0.2">
+                    <div class="network-card-bg">
+                        <img src="Assets/petikprofitgambar.jpg" alt="Petik Profit">
+                    </div>
+                    <div class="network-card-overlay"></div>
+                    <div class="network-card-content">
+                        <div class="network-card-logo">
+                            <img src="Assets/pp.png" alt="Petik Profit">
+                        </div>
+                        <span class="network-card-visit">Visit →</span>
+                    </div>
+                </a>
+
+                <!-- Noka -->
+                <div class="network-card network-card--noka" data-animate="fade-up" data-delay="0.3">
+                    <div class="network-card-bg">
+                        <img src="Assets/nokagambar.jpg" alt="Noka">
+                    </div>
+                    <div class="network-card-overlay"></div>
+                    <div class="network-card-content">
+                        <div class="network-card-logo">
+                            <img src="Assets/noka.png" alt="Noka">
+                        </div>
+                        <span class="network-card-soon">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Container 7: Quote + Contact CTA -->
+    <section class="contact-section" id="contact">
+        <div class="contact-inner">
+            <div class="contact-quote" data-animate="fade-up">
+                <span class="contact-quote-mark">&ldquo;</span>
+                <blockquote class="contact-quote-text">Real access is gold, and your time is too valuable to spend elsewhere, go straight to the expert.</blockquote>
+            </div>
+            <div class="contact-cta" data-animate="fade-up" data-delay="0.2">
+                <a href="mailto:Inquiry@fawzgroup.id" class="contact-btn">Contact Us</a>
+                <span class="contact-email">Inquiry@fawzgroup.id</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <!-- Left: Logo + Address -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="Assets/fawz.png" alt="Fawz Group">
+                </div>
+                <address class="footer-address">
+                    Mentrari Greenwich No. 7–8,
+                    Jl. Letda Sujono No.64, Bandar Selamat,
+                    Kec. Medan Tembung, Kota Medan,
+                    Sumatera Utara 20223
+                </address>
+            </div>
+
+            <!-- Center: Nav links -->
+            <nav class="footer-nav">
+                <a href="#advisory">Advisory</a>
+                <a href="#multi-family-office">Multi-Family Office</a>
+                <a href="#ecosystem">Ecosystem</a>
+            </nav>
+
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
