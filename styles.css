@@ -50,7 +50,41 @@
     }
 }
 
-/* ===== Reset & Base ===== */
+/* ===== Custom Fonts ===== */
+@font-face {
+    font-family: 'BaskervaldADF';
+    src: url('font/BaskervaldADFStd.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BaskervaldADF';
+    src: url('font/BaskervaldADFStd-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BaskervaldADF';
+    src: url('font/BaskervaldADFStd-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BaskervaldADF';
+    src: url('font/BaskervaldADFStd-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BaskervaldADF';
+    src: url('font/BaskervaldADFStd-Heavy.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
 *,
 *::before,
 *::after {
@@ -123,7 +157,7 @@ ul {
 
 /* Brand */
 .navbar-brand a {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'BaskervaldADF', serif;
     font-size: 1.6rem;
     letter-spacing: 4px;
     color: #ffffff;
@@ -145,7 +179,7 @@ ul {
 }
 
 .brand-light {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* Menu */
