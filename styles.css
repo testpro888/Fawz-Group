@@ -175,11 +175,13 @@ ul {
 }
 
 .brand-bold {
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'BaskervaldADF', serif;
 }
 
 .brand-light {
-    font-weight: 400;
+    font-weight: 250;
+    font-family: 'BaskervaldADF', serif;
 }
 
 /* Menu */
