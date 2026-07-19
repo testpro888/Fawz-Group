@@ -6,10 +6,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    pointer-events: none;
+    pointer-events: all;
+    transition: opacity 0.8s ease;
 }
 
-/* Single panel — slides up on open */
 .loader-panel {
     position: absolute;
     inset: 0;
@@ -17,13 +17,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 1s cubic-bezier(0.76, 0, 0.24, 1);
     z-index: 1;
 }
 
-/* Slide the panel up to reveal page */
-.loader.open .loader-panel {
-    transform: translateY(-100%);
+/* Fade out on open */
+.loader.open {
+    opacity: 0;
+    pointer-events: none;
 }
 
 /* Logo */
@@ -31,6 +31,8 @@
     opacity: 0;
     transform: scale(0.92);
     animation: loaderFadeIn 0.6s ease forwards 0.3s;
+    z-index: 2;
+    position: relative;
 }
 
 .loader-logo img {
@@ -102,6 +104,7 @@ body {
     font-weight: 300;
     color: #1a1a1a;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 a {
@@ -1748,11 +1751,9 @@ ul {
 }
 
 .footer-logo img {
-    max-height: 32px;
+    max-height: 52px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0);
-    opacity: 0.85;
 }
 
 .footer-address {
