@@ -6,8 +6,8 @@ window.addEventListener('load', () => {
         loader.classList.add('open');
         setTimeout(() => {
             loader.classList.add('done');
-        }, 800);
-    }, 1600);
+        }, 500);
+    }, 800);
 });
 const navbar = document.getElementById('navbar');
 
@@ -17,7 +17,7 @@ function handleScroll() {
         document.getElementById('brandLogo').src = 'assets/fawz-icon-gold.png';
     } else {
         navbar.classList.remove('scrolled');
-        document.getElementById('brandLogo').src = 'assets/fawz-icon-white.png';
+        document.getElementById('brandLogo').src = 'assets/fawz-icon-gold.png';
     }
 }
 
