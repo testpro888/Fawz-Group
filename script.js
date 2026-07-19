@@ -3,17 +3,12 @@ const loader = document.getElementById('loader');
 
 window.addEventListener('load', () => {
     setTimeout(() => {
-        // Trigger split-open transition
         loader.classList.add('open');
-
-        // After panels finish sliding (0.9s), hide entirely
         setTimeout(() => {
             loader.classList.add('done');
-        }, 950);
+        }, 800);
     }, 1600);
 });
-
-// ===== Navbar scroll behavior =====
 const navbar = document.getElementById('navbar');
 
 function handleScroll() {
