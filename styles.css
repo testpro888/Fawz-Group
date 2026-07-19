@@ -271,10 +271,10 @@ ul {
 }
 
 .navbar.scrolled .nav-link-contact:hover {
-    background: #1a1a1a;
-    color: #ffffff;
+    background: #1a1a1a !important;
+    color: #ffffff !important;
+    border-color: #1a1a1a;
 }
-
 /* ===== Hero Section ===== */
 .hero {
     position: relative;
