@@ -1,13 +1,11 @@
 // ===== Loading Screen =====
 const loader = document.getElementById('loader');
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
+    loader.classList.add('open');
     setTimeout(() => {
-        loader.classList.add('open');
-        setTimeout(() => {
-            loader.classList.add('done');
-        }, 500);
-    }, 800);
+        loader.classList.add('done');
+    }, 500);
 });
 const navbar = document.getElementById('navbar');
 
