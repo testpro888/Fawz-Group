@@ -1,7 +1,7 @@
 // ===== Loading Screen =====
 const loader = document.getElementById('loader');
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         loader.classList.add('open');
         setTimeout(() => {
